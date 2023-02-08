@@ -65,6 +65,9 @@ function Entry(props: any) {
 }
 
 function createEntry(dataterm: any) {
+    // dataterm.end_Date === dataterm.end_Date.slice(-1)
+    //   ? "Now"
+    //   : dataterm.end_Date
     return (  
         <Entry 
             key={dataterm.index}
