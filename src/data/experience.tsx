@@ -10,7 +10,7 @@ interface ExperienceProps {
     jobEXP?: any;
 }
 
-const Experience: ExperienceProps[] = [
+const experience: ExperienceProps[] = [
     {
         index: 1,
         company: "Future Telecom. Co., Ltd",
@@ -53,7 +53,7 @@ const Experience: ExperienceProps[] = [
     },
 ];
 
-export default Experience
+export default experience
 
 
 

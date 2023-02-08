@@ -112,7 +112,7 @@ export default class ChartBar extends PureComponent {
                 top: 10,
                 right: 10,
                 bottom: 10,
-                left: 100,
+                left: 50,
             }}
               barGap="0%"
             >
