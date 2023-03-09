@@ -21,7 +21,7 @@ function Homepage() {
         <div className="allbody">
            <Header />
             <section className="position">
-                <img id="profile-picture" src="/public/images/profile2.png" alt="profile picture" />
+                <img id="profile-picture" src="/public/images/profile.png" alt="profile picture" />
                 <div className="frontend">
                     <h1>Frontend Developer</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio praesentium possimus, ex commodi aliquid aspernatur doloribus molestias earum, sapiente incidunt molestiae iusto. Aliquid porro placeat alias quibusdam dignissimos nisi.</p>
@@ -51,7 +51,6 @@ function Homepage() {
                 </div>
                 {experience.map(createEntry)}
             </section>
-
             <section className="skill" data-aos="slide-right">
                 <h2>Skill</h2>
                 <ul>
@@ -69,8 +68,8 @@ function Homepage() {
                     <li>Adobe Premier</li>
                 </ul>
             </section>
-
             <div className="barchart" data-aos="slide-right"><ChartBar /></div>
+            
 
         </div>
     )   

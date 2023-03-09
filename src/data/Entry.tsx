@@ -1,5 +1,3 @@
-import { useRef } from "react";
-
 function convertDaysToYearsMonths(days: any) {
     let years = Math.floor(days / 365);
     let months = Math.floor((days % 365) / 30);
@@ -11,7 +9,6 @@ function jobexperience() {
 }
 
 function scrollToElement(elementClass: string, offset: number): void {
-    // const targetElement = useRef(null);
     setTimeout(() => {
         const targetElement = document.querySelector(elementClass);
         if (targetElement) {
@@ -34,13 +31,6 @@ function scrollToTop() {
     });
 }
   
-// function scollToSticky(element:any){
-//     window.addEventListener("scroll",function(){
-//         const header = this.document.querySelector(element)
-//         header.classList.toggle("sticky", window.scrollY > 0)
-//     })
-// }
-
 window.addEventListener("scroll",function(){
     const header = document.querySelector("header");
     if (header) {
@@ -80,24 +70,6 @@ function createEntry(dataterm: any) {
 }
 
 // -----------------------play animation when scroll down----------------------- //
-// change class name dynamic
-// function observeElementsByClass(className) {
-//     const observer = new IntersectionObserver((entries) => {
-//       entries.forEach((entry) => {
-//         if (entry.isIntersecting) {
-//           entry.target.classList.add('show')
-//         } else {
-//           entry.target.classList.remove('show')
-//         }
-//       })
-//     })
-  
-//     const hiddenElements = document.querySelectorAll(`.${className}`)
-//     hiddenElements.forEach((el) => observer.observe(el))
-// }
-// observeElementsByClass(chartbar)
-
-// ---------------------------------------------------------
 const className = 'header';
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

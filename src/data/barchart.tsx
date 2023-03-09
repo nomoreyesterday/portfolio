@@ -94,7 +94,8 @@ const renderCustomizedLabel = (props:any) => {
 
 export default class ChartBar extends PureComponent {
     tickFormatter = (value: string, index: number) => {
-        const limit = 10; // put your maximum character
+        // put your maximum character
+        const limit = 10; 
         if (value.length < limit) return value;
         return `${value.substring(0, limit)}...`;
     };
